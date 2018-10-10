@@ -1,0 +1,162 @@
+/* Fonts */
+body, .button, .tooltip, .mod {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 16px;
+	font-weight: normal;
+	line-height: normal;
+	letter-spacing: normal;
+}
+
+#wrapper {
+	margin: auto;
+	width: 700px;
+	padding: 20px 0 0 220px;
+	position: relative;
+}
+
+#content {
+	position: relative;
+  overflow: hidden;
+  height: 700px;
+}
+
+#locationSlider {
+	position: absolute;
+	width: 1400px
+}
+
+#header {
+	padding-bottom: 20px;
+	height: 20px;
+}
+
+.headerButton {
+	font-size: 18px;
+	cursor: pointer;
+	float: left;
+	border-left: 1px solid black;
+	margin-left: 10px;
+	padding-left: 10px;
+}
+
+.headerButton:hover {
+	text-decoration: underline;
+}
+
+.headerButton:first-child {
+	border-left: none;
+	margin-left: 0px;
+	padding-left: 0px;
+}
+
+.location {
+	position: relative;
+	float: left;
+	width: 700px;
+}
+
+#invContainer, #statContainer {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+
+#inv:before, #stats:before {
+	position: absolute;
+	background: white;
+	content: attr(data-legend);
+	left: 8px;
+	top: -13px;
+}
+
+#stats {
+	position: relative;
+	margin-top: 70px;
+	z-index: 10;
+	border: 1px solid black;
+  cursor: default;
+  padding: 5px 10px;
+  width: 200px;
+}
+
+#inv {
+  position: relative;
+	/* edit this */
+	margin-top: 140px;
+  z-index: 10;
+  border: 1px solid black;
+  cursor: default;
+  padding: 5px 10px;
+  width: 200px;
+}
+
+.invRow {
+	position: relative;
+	overflow: auto
+}
+
+.row_key {
+	clear: both;
+	float: left;
+}
+
+.row_val {
+	float: right;
+}
+
+/* Button */
+
+.button {
+	display: block;
+	position: relative;
+	text-align: center;
+	border: 1px solid black;
+	background-color: #FFFFFF;
+	width: 105px;
+	/* margin-left: 5px; */
+	margin-bottom: 5px;
+	padding: 5px 10px;
+	cursor: pointer;
+	user-select: none;
+	transition-duration: 0.2s;
+}
+
+.button:hover {
+	text-decoration: underline;
+}
+
+.button:disabled, .button:disabled:hover {
+	cursor: default;
+	border-color: #b2b2b2;
+	color: #b2b2b2;
+	text-decoration: none;
+	background-color: #DDDDDD;
+}
+
+.click:active {
+      content: "";
+			border-color: #b2b2b2;
+			color: #b2b2b2;
+			background-color: #DDDDDD;
+			transition: 0s
+}
+
+/* Tooltip */
+.tooltip {
+    visibility: hidden;
+		width: 110px;
+		padding: 2px 5px;
+		border: 1px solid black;
+		box-shadow: -1px 3px 2px #666;
+    background: white;
+    position: absolute;
+    z-index: 999;
+		left: 2px;
+		bottom: -30px;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.button:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}

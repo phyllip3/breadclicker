@@ -1,0 +1,66 @@
+<!doctype html>
+
+<head>
+  <title>bread clicker</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <script defer type="text/javascript" src="script/main.js" ></script>
+</head>
+
+<body>
+  <div id="wrapper">
+    <div id="content">
+
+          <div id="header">
+            <div id="kitchen" class="headerButton" onclick="moveKitchen()">Kitchen</div>
+            <div id="office" class="headerButton" onclick="moveOffice()">Office</div>
+          </div>
+          <div id="locationSlider" style="left: 0px;">
+            <div id="kitchen" class="location">
+              <button id="makeButton" class="button click" onclick="makeDough()">make dough
+                <span id="doughDesc" class="tooltip">cost: 1</span>
+              </button>
+              <button id="bakeButton" class="button mod" onclick="bakeBread()">bake bread
+                <span id="bakeDesc" class="tooltip">oven capacity: 5</span>
+              </button>
+              <button id="sellButton" class="button click" onclick="sellBread()">sell bread</button>
+              <button id="hireWorker" class="button click" onclick="hireWorker()">hire worker
+                <span id="workerDesc" class="tooltip">cost: 5</span>
+              </button>
+            </div>
+            <div id="office" class="location">
+              <button id="placeHolder" class="button click" onclick="">placeHolder
+                <span id="placeHolder" class="tooltip">placeHolder</span>
+              </button>
+            </div>
+          </div>
+
+          <div id="statContainer">
+            <div id="stats" data-legend="stats">
+              <div id="resources">
+                <div class="invRow">
+                  <div class="row_key">money</div>
+                  <div id="moneyCount" class="row_val">0</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="invContainer">
+            <div id="inv" data-legend="inventory">
+              <div id="resources">
+                <div class="invRow">
+                  <div class="row_key">dough</div>
+                  <div id="doughCount" class="row_val">0</div>
+                </div>
+                <div class="invRow">
+                  <div class="row_key">bread</div>
+                  <div id="breadCount" class="row_val">0</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+    </div>
+  </div>
+
+</body>

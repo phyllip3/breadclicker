@@ -17,19 +17,31 @@
           <div id="locationSlider" style="left: 0px;">
             <div id="kitchen" class="location">
               <button id="makeButton" class="button click" onclick="makeDough()">make dough
-                <span id="doughDesc" class="tooltip">cost: 1</span>
+                <div class="tooltip">
+                  <div class="row_key">cost</div>
+                  <div id="doughDesc" class="row_val">1</div>
+                </div>
               </button>
               <button id="bakeButton" class="button mod" onclick="bakeBread()">bake bread
-                <span id="bakeDesc" class="tooltip">oven capacity: 5</span>
+                  <div class="tooltip">
+                    <div class="row_key">oven size</div>
+                    <div id="bakeDesc" class="row_val">5</div>
+                  </div>
               </button>
               <button id="sellButton" class="button click" onclick="sellBread()">sell bread</button>
               <button id="hireWorker" class="button click" onclick="hireWorker()">hire worker
-                <span id="workerDesc" class="tooltip">cost: 5</span>
+                  <div class="tooltip">
+                    <div class="row_key">cost</div>
+                    <div id="workerDesc" class="row_val">1</div>
+                  </div>
               </button>
             </div>
             <div id="office" class="location">
               <button id="placeHolder" class="button click" onclick="">placeHolder
-                <span id="placeHolder" class="tooltip">placeHolder</span>
+                  <div class="tooltip">
+                    <div class="row_key">cost</div>
+                    <div id="placeHolder" class="row_val">1</div>
+                  </div>
               </button>
             </div>
           </div>

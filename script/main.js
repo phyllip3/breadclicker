@@ -1,17 +1,17 @@
-let dough = 0;
-let bread = 0;
-let money = 100;
-let workers = 0;
-let ovenCap = 5;
-let workerCost = 20;
+var dough = 0;
+var bread = 0;
+var money = 100;
+var workers = 0;
+var ovenCap = 5;
+var workerCost = 20;
 
 const DOUGHCT = document.querySelector("#doughCount");
 const BREADCT = document.querySelector("#breadCount");
-const MONEYCT = document.querySelector("#moneyCount")
+const MONEYCT = document.querySelector("#moneyCount");
 const BAKEBT = document.querySelector("#bakeButton");
-const KITCHEN = document.querySelector("#kitchen")
-const OFFICE = document.querySelector("#office")
-const SLIDER = document.querySelector("#locationSlider")
+const KITCHEN = document.querySelector("#kitchen");
+const OFFICE = document.querySelector("#office");
+const SLIDER = document.querySelector("#locationSlider");
 
 function makeDough() {
   if (money > 0) {
@@ -48,7 +48,7 @@ function hireWorker() {
   if (money >= workerCost) {
     money -= workerCost;
     workers++;
-    workerCost = Math.ceil(workerCost * 1.1);
+    workerCost = Math.ceil(workerCost * 1.2);
   }
 }
 
@@ -77,7 +77,7 @@ window.setInterval(function() {
   MONEYCT.innerHTML = Math.floor(money);
 
 
-  document.querySelector("#bakeDesc").innerHTML = "oven capacity: " + ovenCap
-  document.querySelector("#workerDesc").innerHTML = "cost: " + workerCost
+  document.querySelector("#bakeDesc").innerHTML = ovenCap
+  document.querySelector("#workerDesc").innerHTML = workerCost
 
 }, 10)

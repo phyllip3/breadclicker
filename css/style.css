@@ -5,6 +5,8 @@ body, .button, .tooltip, .mod {
 	font-weight: normal;
 	line-height: normal;
 	letter-spacing: normal;
+	background-color: #272823;
+	color: #EEE;
 }
 
 #wrapper {
@@ -21,8 +23,9 @@ body, .button, .tooltip, .mod {
 }
 
 #locationSlider {
-	position: absolute;
-	width: 1400px
+	position: relative;
+	width: 1400px;
+	transition: .5s;
 }
 
 #header {
@@ -34,7 +37,7 @@ body, .button, .tooltip, .mod {
 	font-size: 18px;
 	cursor: pointer;
 	float: left;
-	border-left: 1px solid black;
+	border-left: 1px solid #EEE;
 	margin-left: 10px;
 	padding-left: 10px;
 }
@@ -63,7 +66,7 @@ body, .button, .tooltip, .mod {
 
 #inv:before, #stats:before {
 	position: absolute;
-	background: white;
+	background: #272823;
 	content: attr(data-legend);
 	left: 8px;
 	top: -13px;
@@ -71,9 +74,9 @@ body, .button, .tooltip, .mod {
 
 #stats {
 	position: relative;
-	margin-top: 70px;
+	margin-top: 50px;
 	z-index: 10;
-	border: 1px solid black;
+	border: 1px solid #EEE;
   cursor: default;
   padding: 5px 10px;
   width: 200px;
@@ -82,9 +85,9 @@ body, .button, .tooltip, .mod {
 #inv {
   position: relative;
 	/* edit this */
-	margin-top: 140px;
+	margin-top: 100px;
   z-index: 10;
-  border: 1px solid black;
+  border: 1px solid #EEE;
   cursor: default;
   padding: 5px 10px;
   width: 200px;
@@ -110,8 +113,8 @@ body, .button, .tooltip, .mod {
 	display: block;
 	position: relative;
 	text-align: center;
-	border: 1px solid black;
-	background-color: #FFFFFF;
+	border: 1px solid #EEE;
+	background-color: #272823;
 	width: 105px;
 	/* margin-left: 5px; */
 	margin-bottom: 5px;
@@ -127,8 +130,8 @@ body, .button, .tooltip, .mod {
 
 .button:disabled, .button:disabled:hover {
 	cursor: default;
-	border-color: #b2b2b2;
-	color: #b2b2b2;
+	border-color: #444;
+	color: #444;
 	text-decoration: none;
 	background-color: #DDDDDD;
 }
@@ -147,8 +150,8 @@ body, .button, .tooltip, .mod {
 		width: 110px;
 		padding: 2px 5px;
 		border: 1px solid black;
-		box-shadow: -1px 3px 2px #666;
-    background: white;
+		box-shadow: -1px 3px 2px #111;
+		background-color: #171813;
     position: absolute;
     z-index: 999;
 		left: 2px;

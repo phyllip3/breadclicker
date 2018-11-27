@@ -42,7 +42,7 @@ body, .button, .tooltip, .mod {
 	padding-left: 10px;
 }
 
-.headerButton:hover {
+.headerButton:hover, .headerButton.selected {
 	text-decoration: underline;
 }
 

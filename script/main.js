@@ -1,6 +1,6 @@
 var dough = 0;
 var bread = 0;
-var money = 100;
+var money = 0;
 var workers = 0;
 var ovenCap = 5;
 var workerCost = 20;
@@ -14,10 +14,7 @@ const OFFICE = document.querySelector("#office");
 const SLIDER = document.querySelector("#locationSlider");
 
 function makeDough() {
-  if (money > 0) {
-    money--;
     dough++;
-  }
 }
 
 function bakeBread() {

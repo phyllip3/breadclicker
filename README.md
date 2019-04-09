@@ -1,5 +1,5 @@
 # Bread Clicker
-Play at <a href="https://tempestfaux.github.io/breadclicker/">https://tempestfaux.github.io/breadclicker/</a>
+Play at <a href="https://phyllip3.github.io/breadclicker/">https://phyllip3.github.io/breadclicker/</a>
 
 Bread Clicker is an incremental game where players operate a bakery.
 

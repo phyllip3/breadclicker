@@ -1,5 +1,5 @@
 <!doctype html>
-
+<html>
 <head>
   <title>bread clicker</title>
   <link rel="stylesheet" type="text/css" href="css/style.css"/>
@@ -19,7 +19,7 @@
               <button id="makeButton" class="button click" onclick="makeDough()">make dough
                 <div class="tooltip">
                   <div class="row_key">cost</div>
-                  <div id="doughDesc" class="row_val">1</div>
+                  <div id="doughDesc" class="row_val">free</div>
                 </div>
               </button>
               <button id="bakeButton" class="button mod" onclick="bakeBread()">bake bread
@@ -28,20 +28,33 @@
                     <div id="bakeDesc" class="row_val">5</div>
                   </div>
               </button>
-              <button id="sellButton" class="button click" onclick="sellBread()">sell bread</button>
+              <button id="sellButton" class="button click" onclick="sellBread()">sell bread
+                <div class="tooltip">
+                  <div class="row_key">price</div>
+                  <div id="sellDesc" class="row_val">2</div>
+                </div>
+              </button>
               <button id="hireWorker" class="button click" onclick="hireWorker()">hire worker
-                  <div class="tooltip">
-                    <div class="row_key">cost</div>
-                    <div id="workerDesc" class="row_val">1</div>
-                  </div>
+                <div class="tooltip">
+                  <div class="row_key">cost</div>
+                  <div id="workerDesc" class="row_val">1</div>
+                </div>
               </button>
             </div>
             <div id="office" class="location">
+              assignment
               <button id="placeHolder" class="button click" onclick="">placeHolder
-                  <div class="tooltip">
-                    <div class="row_key">cost</div>
-                    <div id="placeHolder" class="row_val">1</div>
-                  </div>
+                <div class="tooltip">
+                  <div class="row_key">cost</div>
+                  <div id="placeHolder" class="row_val">placeHolder</div>
+                </div>
+              </button>
+              upgrade
+              <button id="placeHolder" class="button click" onclick="">placeHolder
+                <div class="tooltip">
+                  <div class="row_key">cost</div>
+                  <div id="placeHolder" class="row_val">placeHolder</div>
+                </div>
               </button>
             </div>
           </div>
@@ -59,7 +72,7 @@
           <div id="invContainer">
             <div id="inv" data-legend="inventory">
               <div id="resources">
-                <div class="invRow">
+                <div id="doughInv" class="invRow">
                   <div class="row_key">dough</div>
                   <div id="doughCount" class="row_val">0</div>
                 </div>
@@ -76,3 +89,4 @@
   </div>
 
 </body>
+</html>

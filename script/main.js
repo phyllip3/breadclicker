@@ -36,8 +36,8 @@ function bakeBread() {
 
 function sellBread() {
   if (bread > 0) {
-    bread--;
-    money += 2;
+    money = 2*bread;
+    bread = 0;
   }
 }
 
@@ -46,6 +46,7 @@ function hireWorker() {
     money -= workerCost;
     workers++;
     workerCost = Math.ceil(workerCost * 1.2);
+    //document.querySelector("#doughInv").appendChild(createTooltip("worker", "doughTool"));
   }
 }
 
@@ -61,15 +62,30 @@ function moveOffice() {
   SLIDER.style.left = "-700px"
 }
 
+/*
+function createTooltip(key, id) {
+  let tooltip = document.createElement("div");
+  let row_key = document.createElement("div");
+  let row_val = document.createElement("div");
+  tooltip.setAttribute("class", "tooltip");
+  row_key.setAttribute("class", "row_key");
+  row_key.innerHTML = key;
+  row_val.setAttribute("id", id)
+  row_val.setAttribute("class", "row_val");
+  tooltip.appendChild(row_key);
+  tooltip.appendChild(row_val);
+  return tooltip;
+} */
+
 window.setInterval(function() {
   dough += (workers * 1/100);
 
-
   if (workers > 0) {
-      DOUGHCT.innerHTML = Math.floor(dough) + " (+" + (workers) + "/sec)";
+      DOUGHCT.innerHTML = Math.floor(dough) + " (+" + (workers) + " / sec)";
   } else {
       DOUGHCT.innerHTML = Math.floor(dough);
   }
+
   BREADCT.innerHTML = Math.floor(bread);
   MONEYCT.innerHTML = Math.floor(money);
 
